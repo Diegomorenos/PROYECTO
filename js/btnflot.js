@@ -1,6 +1,6 @@
-$(".botonF1").hover(function () {
+$(".botonF1").hover(function(){
     $(".btnn").addClass("animacionVer");
-  });
-  $(".conten").mouseleave(function () {
+  })
+  $(".conten").mouseleave(function(){
     $(".btnn").removeClass("animacionVer");
-  });
+  })
