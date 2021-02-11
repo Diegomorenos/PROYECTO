@@ -42,16 +42,33 @@
     </nav>
   
   
-    <!--Formulario de contáctenos-->
+    <!--Formulario de Registro-->
 
     
       <div class="container">
         <br>
         <form action="" class="">
-            <h1>Contáctenos</h1>
+            <h1>REGISTRO</h1>
             <div class="form-group">
                 <label for="ingrese su nombre completo"> Nombres</label>
-                <input type="text" class="form-control" id="Ingrese su nombre completo" placeholder="Ingrese su nombre completo">
+                <input type="text" class="form-control" id="Ingrese su nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group">
+                <label for="ingrese su nombre completo"> Apellidos</label>
+                <input type="text" class="form-control" id="Ingrese su apellido" placeholder="Ingrese su apellido">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1"> Tipo de documento </label>
+                <select class="form-control" id="Seleccione tipo de documento">
+                  <option> CC </option>
+                  <option> Tarjeta de identidad </option>
+                  <option> Pasaporte </option>
+                  <option> CC de extranjeria</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ingrese su nombre completo"> Documento</label>
+                <input type="text" class="form-control" id="Ingrese su número de documento" placeholder="Ingrese su número de documento">
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1"> Correo Electronico</label>
@@ -62,35 +79,20 @@
                 <input type="text" class="form-control" id="ingrese su número de contacto" placeholder="1234567">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1"> Tipo de solicitud </label>
-              <select class="form-control" id="Seleccione la opicón de su consulta">
-                <option> Consulta de producto </option>
-                <option> Tiempo de entrega </option>
-                <option> Consulta de ticket </option>
-                <option> Sugerencia </option>
-                <option> Metodos de pago </option>
-              </select>
-            </div>
-       
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Ingrese su solicitud</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="12344567"> Ingrese su clave </label>
+                <input type="text" class="form-control" id="Ingrese su clave" placeholder="Ingrese su clave">
             </div>
             <div class="form-group">
-              <label for="archivo"> Adjuntar archivo</label>
-              <input type="file" id="archivo">
-              <p class="help-block"> Maximo 100MB</p>
+                <label for="12344567"> Confirmación de clave </label>
+                <input type="text" class="form-control" id="Confirme su clave" placeholder="confirme su clave">
             </div>
-    
+
             <div>
               <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
         </form>
       </div>  
 
-
-      <!--Boton flotante-->
-         
 
     <!-- FOOTER -->
     <footer class="container">
@@ -102,5 +104,3 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
