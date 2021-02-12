@@ -9,83 +9,134 @@
     <link rel="stylesheet" type="text/css" href="./css/estilos.css">
 </head>
 <body>
+  <main>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-      <img src="./img/logoworldtrONIC.png" class="img-fluid img-thumbnail" width="70px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">inicio</a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+          <img src="./img/logoworldtrONIC.png" class="img-fluid img-thumbnail" width="70px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="./nuestroequipo.html">Nuestro Equipo</a></li>
+                  <li><a class="dropdown-item" href="./quienessomos.html">¿Quienes Somos?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./Catalogo.html">Catalogo de Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./Carrito.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="40" 
+                  height="20" 
+                  fill="currentColor" 
+                  class="bi bi-cart3" 
+                  viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Iniciar Sesión
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="./registro.html">Registro</a></li>
+                  <li><a class="dropdown-item" href="./contrasena.html">Recuperar Contraseña</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./administracion.html">Administrar</a></li>
+                </ul>
+              </div>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                <button class="btn btn-outline-success active" type="submit">Buscar</button>
+              </form>
+            </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Nosotros
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="./nuestroequipo.html">Nuestro Equipo</a></li>
-              <li><a class="dropdown-item" href="./quienessomos.html">¿Quienes Somos?</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./Catalogo.html">Catalogo de Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./Carrito.html">
-              <svg xmlns="http://www.w3.org/2000/svg" 
-              width="40" 
-              height="20" 
-              fill="currentColor" 
-              class="bi bi-cart3" 
-              viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Iniciar Sesión
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="./login.html">Login</a></li>
-              <li><a class="dropdown-item" href="./registro.html">Registro</a></li>
-              <li><a class="dropdown-item" href="./contraseña.html">Recuperar Contraseña</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./administracion.html">Administrar</a></li>
-            </ul>
-          </div>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
-            <button class="btn btn-outline-success active" type="submit">Buscar</button>
-          </form>
-        </div>
-      </li>
-      </ul>
-      </nav>
-
-      <div class="conten">
-        <button class="botonF1">
-          <span>+</span>
-        </button>
-        <button class="btnn botonF2">
-          <span>*</span>
-        </button>
-        <button class="btnn botonF3">
-          <span>*</span>
-        </button>
-        <button class="btnn botonF4">
-          <span>*</span>
-        </button>
-        <button class="btnn botonF5">
-          <span>*</span>
-        </button>
-        </div>
+          </ul>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <h5 class="card-header">  </h5>
+      <div class="d-flex justify-content-between align-items-center">
         
-
+        <div class="text align-items-center" style="width: 21rem;">
+          
+          <img class="card-img-top" src="./img/mision.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">  </h5>
+          <p class="card-text">Somos una empresa dedicada a la venta de accesorios tecnológicos con el fin de llegar a todos  los hogares de Bogotá cubriendo las diferentes necesidades de nuestros usuarios</p>
           
         </div>
+      </div>
+
+<div class="card" style="width: 18rem;">
+  <img src="./img/vision1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">Consolidarnos como una de las mejores empresas de productos tecnológicos con posiciones de liderazgo en las categorías que competimos. Seremos una empresa sólida, relevante al aporte del flujo de la Organización Wordltronic</p>
+    
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./img/vision.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">¿QUIÉNES SOMOS?
+      Somos una marca fresca de distribución mayorista, con más de 10 años de experiencia en el sector de la tecnología, con prácticas de clase mundial,
+      
+      Nuestra filosofía: no queremos venderle, queremos ser su aliado.
+      
+      Bajo este principio alineamos todos nuestros procesos, acciones y esfuerzos, con el fin de que nuestra relación perdure en el tiempo. </p>
+    
+  </div>
+</div>
+
+
+      </div>
+        
+            <div class="conten">
+              <button class="botonF1">
+                <span>+</span>
+              </button>
+              <button class="btnn botonF2">
+                <span>*</span>
+              </button>
+              <button class="btnn botonF3">
+                <span>*</span>
+              </button>
+              <button class="btnn botonF4">
+                <span>*</span>
+              </button>
+              <button class="btnn botonF5">
+                <span>*</span>
+              </button>
+              </div>
+              
+            </main>
+          
+        </div>
+
+      
+        <footer class="text-muted py-5 bg-dark">
+          <div class="container">
+            <p class="float-end mb-1">
+              <a href="#">INICIO</a>
+            </p>
+            <p class="mb-1"> WORLDTRONIC!</p>
+           
+          </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="./js/btnflot.js"></script>
