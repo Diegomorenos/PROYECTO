@@ -4,3 +4,4 @@ $(".botonF1").hover(function(){
   $(".conten").mouseleave(function(){
     $(".btnn").removeClass("animacionVer");
   })
+
