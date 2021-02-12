@@ -63,6 +63,8 @@
       </nav>
 
       
+        <h5 class="card-header"> ENVIO Y METODO DE PAGO </h5>
+              
 
       <!--Formulario de pedido-->
       <body class="bg-light">
@@ -136,59 +138,34 @@
   
               <div class="mb-3">
                 <label for="email"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Correo electrónico </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(opcional)</font></font></span></label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <input type="email" class="form-control" id="email" placeholder="tu@correo.com">
                 <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
+                  Ingrese una dirección de correo válida
                 </div>
               </div>
   
               <div class="mb-3">
-                <label for="address"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección</font></font></label>
+                <label for="address"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de envio </font></font></label>
                 <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
                 <div class="invalid-feedback">
-                  Please enter your shipping address.
+                  Ingrese la dirección de envio.
                 </div>
               </div>
-  
-              <div class="mb-3">
-                <label for="address2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección 2 </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(opcional)</font></font></span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Apartamento o suite">
-              </div>
-  
+    
               <div class="row">
                 <div class="col-md-5 mb-3">
-                  <label for="country"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">País</font></font></label>
+                  <label for="country"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Ciudad</font></font></label>
                   <select class="custom-select d-block w-100" id="country" required="">
-                    <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escoger...</font></font></option>
-                    <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estados Unidos</font></font></option>
+                    <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Seleccione una</font></font></option>
+                    <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid country.
+                    Selecciona una ciudad
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <label for="state"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Expresar</font></font></label>
-                  <select class="custom-select d-block w-100" id="state" required="">
-                    <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escoger...</font></font></option>
-                    <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">California</font></font></option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please provide a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <label for="zip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cremallera</font></font></label>
-                  <input type="text" class="form-control" id="zip" placeholder="" required="">
-                  <div class="invalid-feedback">
-                    Zip code required.
-                  </div>
-                </div>
-              </div>
+                
+            </div>
               <hr class="mb-4">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="same-address">
-                <label class="custom-control-label" for="same-address"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La dirección de envío es la misma que mi dirección de facturación</font></font></label>
-              </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="save-info">
                 <label class="custom-control-label" for="save-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Guarde esta información para la próxima vez</font></font></label>
@@ -200,40 +177,40 @@
               <div class="d-block my-3">
                 <div class="custom-control custom-radio">
                   <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                  <label class="custom-control-label" for="credit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de crédito</font></font></label>
+                  <label class="custom-control-label" for="credit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de crédito/debito</font></font></label>
                 </div>
                 <div class="custom-control custom-radio">
                   <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                  <label class="custom-control-label" for="debit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de débito</font></font></label>
+                  <label class="custom-control-label" for="debit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PSE</font></font></label>
                 </div>
                 <div class="custom-control custom-radio">
                   <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                  <label class="custom-control-label" for="paypal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paypal</font></font></label>
+                  <label class="custom-control-label" for="paypal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pago contraentrega</font></font></label>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 mb-3">
-                  <label for="cc-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre en la tarjeta</font></font></label>
+                  <label for="cc-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Titular de la tarjeta</font></font></label>
                   <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                  <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre completo como se muestra en la tarjeta</font></font></small>
+                  <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre como se muestra en la tarjeta</font></font></small>
                   <div class="invalid-feedback">
                     Name on card is required
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="cc-number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Número de Tarjeta de Crédito</font></font></label>
+                  <label for="cc-number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Número de la Tarjeta </font></font></label>
                   <input type="text" class="form-control" id="cc-number" placeholder="" required="">
                   <div class="invalid-feedback">
-                    Credit card number is required
+                    Campo requerido
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-3 mb-3">
-                  <label for="cc-expiration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vencimiento</font></font></label>
+                  <label for="cc-expiration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fecha de vencimiento</font></font></label>
                   <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
                   <div class="invalid-feedback">
-                    Expiration date required
+                    Campo requerido
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
@@ -245,7 +222,7 @@
                 </div>
               </div>
               <hr class="mb-4">
-              <button class="btn btn-primary btn-lg btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Continuar a la comprobación</font></font></button>
+              <button class="btn btn-primary btn-lg btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Validar </font></font></button>
             </form>
           </div>
         </div>
